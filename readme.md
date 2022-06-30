@@ -85,6 +85,7 @@ Let us compare different options and choose the most appropriate one based on ou
 * ❗ can have long latency
 * ❗ connections timeouts
 * ❗ traffic overhead
+* ❗ possibility to "DDoS" server _(in comparison to REST, which has the static interface of response, GQL offers clients to decide what data should be selected)_
 
 **Websocket:**
 * ✅ duplex communication
@@ -250,7 +251,7 @@ The next important part we should think about is optimization. Here I have prepa
   * store something in app
 * gzip
 * throttle
-* brottle
+* [brotli](https://github.com/google/brotli)
 * use CDN
 
 **Rendering**
